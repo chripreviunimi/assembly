@@ -1,0 +1,8 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	call                    3002
+//	n1                      3003
+//	n2                      3004
+//	neg                     300B
+//	pos                     300E
+//	subpr                   3005
