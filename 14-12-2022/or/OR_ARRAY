@@ -1,0 +1,36 @@
+	.orig	x3000
+	
+	lea	r0,array
+	ld	r1,string
+	jsr	OR_ARRAY
+
+stop	brnzp	stop
+
+array	.fill	b0000111100001111
+	.fill	b0011001100110011
+	.fill	b1100110011001100
+	.fill	0
+
+string	.fill	b1111000011110000
+
+
+OR_ARRAY
+	st	r2,salvar2
+	not	r1,r1
+
+
+ciclo	ldr	r2,r0,#0	;r2 = a(i)
+	brz	fine
+;qui siamo all'interno dell'array
+	not	r2,r2
+	and	r2,r1,r2	;r2 = not(a(i)) and not(r1)
+	not	r2,r2		;r2 = a(i) or r1
+	str	r2,r0,#0	;scrivo r2 nella cella puntata da r0 con offset 0
+	add	r0,r0,#1
+	brnzp	ciclo
+
+fine	ld	r2,salvar2
+
+salvar2	.blkw	1
+
+	.end
