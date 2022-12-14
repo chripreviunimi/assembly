@@ -1,0 +1,12 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ciclo                   300F
+//	fibonacci               3004
+//	fine                    3015
+//	neg                     3019
+//	num                     3003
+//	return                  301B
+//	salvar1                 301C
+//	salvar2                 301D
+//	salvar3                 301E
+//	stop                    3002
