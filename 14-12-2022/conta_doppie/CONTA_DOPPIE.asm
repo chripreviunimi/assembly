@@ -3,8 +3,7 @@
 	lea	r0,string
 	lea	r1,fine_string
 	add	r1,r1,#-2	;ora r1 punta all'ultima cella di string
-	not	r1,r1
-	add	r1,r1,#1	;nego r1 per vedere se sono arrivato alla fine
+
 	jsr 	CONTA_DOPPIE
 
 stop	brnzp	stop
@@ -21,6 +20,8 @@ fine_string	.fill	#0
 
 ;sottoprogramma
 CONTA_DOPPIE
+		not	r1,r1
+	add	r1,r1,#1	;nego r1 per vedere se sono arrivato alla fine
 	
 	st	r2,salvar2	;lettera puntata
 	st	r3,salvar3	;lettere puntata+1

@@ -1,13 +1,13 @@
 //Symbol Name		Page Address
 //----------------	------------
-//	CONTA_DOPPIE            306E
+//	CONTA_DOPPIE            306C
 //	ciclo                   3076
 //	conta                   3080
 //	fine                    3082
-//	fine_string             306D
+//	fine_string             306B
 //	salvar2                 3089
 //	salvar3                 308A
 //	salvar4                 308B
 //	salvar5                 308C
-//	stop                    3006
-//	string                  3007
+//	stop                    3004
+//	string                  3005
