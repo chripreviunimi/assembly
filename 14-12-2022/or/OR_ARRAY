@@ -30,6 +30,7 @@ ciclo	ldr	r2,r0,#0	;r2 = a(i)
 	brnzp	ciclo
 
 fine	ld	r2,salvar2
+	ret
 
 salvar2	.blkw	1
 
